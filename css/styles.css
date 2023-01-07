@@ -1,0 +1,81 @@
+html,body{
+  overflow-x: hidden;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+#servicios, #nosotros{
+    scroll-margin-top: 70px;
+}
+#contactarte{
+    color: #02C3FC;
+}
+#boton-contacto{
+    background-color: #02C3FC;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    
+}
+footer{
+    background-color: #014c63;
+}
+footer h5{
+    color: #02C3FC;
+}
+  .navbar .navbar-nav .nav-link {
+    font-size: 1.2em;
+  }
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+    margin-bottom: .5em;
+  }
+  .navbar .navbar-nav .nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  @media only screen and (min-width: 992px) {
+    .navbar {
+      padding: 0;
+    }
+    .navbar .navbar-brand {
+      padding: 0 0.7em;
+    }
+    .navbar .navbar-nav .nav-link {
+      padding: 1em 0;
+    }
+    .navbar .navbar-nav .nav-item {
+      margin: 0 .5em;
+    }
+  }
+.service-icons{
+    background-color: #0957d3 ;
+    padding:1.5rem;
+    margin:-1.5rem;
+}
+@media only screen and (max-width: 575px) {
+    .service-icons{
+        background-color: #0957d3 ;
+        padding:1.5rem;
+        margin:0.1rem;
+    }
+    .bg-image{
+      background-attachment: local;
+    }
+}
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+  .contact-title{
+    margin-top: -8rem;
+  }
+}
